@@ -17,10 +17,10 @@ You can test and use this from master like this:
 - If you want to help us coding, join Expo slack https://slack.expo.io/, so we can chat over there.
 
 #### Breaking Changes
-##### android build tools has been bumped to 25.0.2, please update (can be done via android cli or AndroidStudio)
+##### android build tools has been bumped to 26.0.2, please update (can be done via android cli or AndroidStudio)
 ##### react-native header imports have changed in v0.40, and that means breaking changes for all! [Reference PR & Discussion](https://github.com/lwansbrough/react-native-camera/pull/544).
 - if on react-native < 0.40: `npm i react-native-camera@0.4`
-- if on react-native >= 0.40 `npm i react-native-camera@0.6`
+- if on react-native >= 0.40 `npm i react-native-camera`
 
 ##### Permissions
 To use the camera on Android you must ask for camera permission:
@@ -54,7 +54,7 @@ To enable `video recording` feature you have to add the following code to the `A
 <key>NSMicrophoneUsageDescription</key>
 <string>Your message to user when the microphone is accessed for the first time</string>
 ```
-3. On Android, you require `buildToolsVersion` of `25.0.2+`. _This should easily and automatically be downloaded by Android Studio's SDK Manager._
+3. On Android, you require `buildToolsVersion` of `26.0.2+`. _This should easily and automatically be downloaded by Android Studio's SDK Manager._
 
 4. On iOS 11 and later you need to add `NSPhotoLibraryAddUsageDescription` key to the Info.plist. This key lets you describe the reason your app seeks write-only access to the user’s photo library. Info.plist can be found in 'your_project/ios/your_project/Info.plist'. Add the following code:
 ```
